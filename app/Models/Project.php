@@ -11,6 +11,7 @@ class Project extends Model
 
     protected $fillable = ['name','status'];
 
+    protected $hidden = ['created_at','updated_at','deleted_at'];
     function users(){
         return $this->belongsToMany(User::class);
     }

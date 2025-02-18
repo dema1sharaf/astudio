@@ -12,6 +12,7 @@ class AttributeValue extends Model
 
     protected $fillable = ['attribute_id', 'entity_id','value'];
 
+    protected $hidden = ['created_at','updated_at','deleted_at'];
     public function attribute(){
         return $this->belongsTo(Attribute::class);
     }

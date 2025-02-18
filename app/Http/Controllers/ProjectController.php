@@ -44,7 +44,7 @@ class ProjectController extends Controller
 
             // Assign attributes (if provided)
             if ($request->has('attributes')) {
-                foreach ($request->attributes as $attribute) {
+                foreach ($request->input('attributes') as $attribute) {
                     AttributeValue::create([
                         'attribute_id' => $attribute['id'],
                         'entity_id' => $project->id, // Project ID as entity_id
@@ -90,7 +90,7 @@ class ProjectController extends Controller
 
             // Update or assign new attributes
             if ($request->has('attributes')) {
-                foreach ($request->attributes as $attribute) {
+                foreach ($request->input('attributes') as $attribute) {
                     AttributeValue::updateOrCreate(
                         ['attribute_id' => $attribute['id'], 'entity_id' => $project->id],
                         ['value' => $attribute['value']]

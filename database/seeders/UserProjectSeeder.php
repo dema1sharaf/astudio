@@ -20,7 +20,7 @@ class UserProjectSeeder extends Seeder
         $projects = Project::all();
         // Assign each user to random projects
         foreach ($users as $user) {
-            $randomProjects = $projects->random(rand(1, 3)); // Each user gets 1 to 3 projects
+            $randomProjects = $projects->random(rand(1, 2)); // Each user gets 1 to 3 projects
             foreach ($randomProjects as $project) {
                 DB::table('user_project')->insert([
                     'user_id' => $user->id,

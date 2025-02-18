@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\AttributeController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Laravel\Passport\Http\Controllers\AccessTokenController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+
+Route::post('register', [AuthController::class, 'register']);
+Route::post('login', [AuthController::class, 'login']);
 
 
 Route::middleware('auth:api')->group(function () {
@@ -32,4 +34,6 @@ Route::middleware('auth:api')->group(function () {
     Route::post('projects', [ProjectController::class, 'store']);
     Route::put('projects/{id}', [ProjectController::class, 'update']);
     Route::get('projects/filter', [ProjectController::class, 'filterByAttributes']);
+
+    Route::post('logout', [AuthController::class, 'logout']);
 });

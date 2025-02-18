@@ -17,7 +17,7 @@ class AttributeController extends Controller
 
     }
 
-    public function create(Request $request){
+    public function store(Request $request){
 
         try {
             $validator = Validator::make($request->all(), [
@@ -60,6 +60,7 @@ class AttributeController extends Controller
                 return response()->json(['errors' => $validator->errors()], 422);
             }
 
+//            dd($validator->validated());
             $attribute->update($validator->validated());
 
             return response()->json([
