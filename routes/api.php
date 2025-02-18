@@ -31,5 +31,5 @@ Route::middleware('auth:api')->group(function () {
     Route::get('projects', [ProjectController::class, 'index']);
     Route::post('projects', [ProjectController::class, 'store']);
     Route::put('projects/{id}', [ProjectController::class, 'update']);
-//    Route::get('projects/filter', [ProjectController::class, 'filterByAttributes']);
+    Route::get('projects/filter', [ProjectController::class, 'filterByAttributes']);
 });
