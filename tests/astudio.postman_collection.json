@@ -1,0 +1,4720 @@
+{
+	"info": {
+		"_postman_id": "ddd3c794-595c-4e56-85ee-b0f73b1ca1cb",
+		"name": "astudio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3979108"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "massa 1",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "bazrtwo 1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "massa1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "register response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "massa 1",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "bazrtwo 1",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "massa1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/register",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Feb 2025 22:56:01 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User registered successfully\",\n    \"user\": {\n        \"first_name\": \"massa 1\",\n        \"last_name\": \"bazrtwo 1\",\n        \"email\": \"massa1@gmail.com\",\n        \"updated_at\": \"2025-02-18T22:56:01.000000Z\",\n        \"created_at\": \"2025-02-18T22:56:01.000000Z\",\n        \"id\": 3\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjE1MzQxNmMxZmYzZWZlMjhiOWNkOTM0NGU3YmNiNjZkZjlhZjdmYzllZjMwZmFlYWI0N2JjYjk3MmViMTMxYzkwMzk4MWFhOWU1MTU0NDkiLCJpYXQiOjE3Mzk5MTkzNjEuMjMyNjc4LCJuYmYiOjE3Mzk5MTkzNjEuMjMyNjc5LCJleHAiOjE3NzE0NTUzNjEuMjI4MzQ2LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.PtzZXmgmUeomsG6YcXBk7_ziJBZXQEhqA3nrChopSafhi_9IgJhDzEk939cDBclgmRjNFBHVZx7ubsapaTZitF2OeiZZ_uePYPUGjxCs62Sd3a2dGscpXSWy4Q_JKLm6qUum3ocDiB4itYVdoSEU26wxezwfWROrvCli72YTa10SdY1JUmd9UbRcpk6TaZOpWxJNiJYc7h4eUdDauYmJuJ-R0GtSnleV28Thw0XVXhfmBYoDfDqxejWhFU48kkKwe3hqlyVSzjm-aX6rdmtrcqgiPQ6xQ_ipn-oFjNrcp9K1tLSwsxmv5u9MuxuRuoaqnFUvQ9YAaGI2IcmJhqaFvTY0WfQ5fYZBET7ZbtciXw1C_8qcSia2Snt-6oWLy7GuRd1473B0_GwFUODBRyG2Qotgv9H0hyKcztEimzRJeD8ofkmSGncQ56y1_RvvKYKhq0FwTc2WBDpZpiTcZteiXtWHjFzbsjZxS57lQh3h5vdd_X_p-6qGE_zIGvA4n9zxPZ2ef2qib4uLxZ2ABm7dBTC1DDydTAKpby1H_X38XCLFLHtEe2QOecqU2Zobfmokv6bX4GUihYL_iMrVORN436EEfz4M0oFZ4qUv0L_tQgR13Tu2nSeGMbfba2bGkep7wVfh818K34P6tWH7zUza8T-q90nqae1YjNeIcfUbQ4g\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "massa@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "massa@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Feb 2025 23:06:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Login successful\",\n    \"user\": {\n        \"id\": 1,\n        \"first_name\": \"massa\",\n        \"last_name\": \"bazrtwo\",\n        \"email\": \"massa@gmail.com\"\n    },\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTc2NmJlOGQ4Yjc0YWVhZjBmM2UxZDhkOGY0YTZjYzA1MTFmZTQxMjI2MmNhZWEzNjkwZGIzZTZmYTE0NjNhODAzNDY5ZDAwYjljMTUzMWQiLCJpYXQiOjE3Mzk5MjAwMDEuMzUxMDAxLCJuYmYiOjE3Mzk5MjAwMDEuMzUxMDAzLCJleHAiOjE3NzE0NTYwMDEuMzQ4NTYsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.D6tL9I3A9dcFkWCME5g9RnhSQSt0Awb2ITSzmMbFzc_H15T_L_0_PVJRwgFNYBbrjQ7Jwe-TKmLQduY39BoKzmrtPBtYI2njdh-TEihkk2ArKW5JvOGR2mXyydi7I4zpo-nUFGHQ5cI491AbW0-e0EyNbRzw1dhMNNfcHz4YAJjKySH8L94pa7oV9k4FC1IjNlGIOAQrKpqFMrP3KuBgnzDN_rc0dFmrBsVSuAG18lTB3lJhQEVOisGB-R3kUYMClkHph9ofF5FcypvoJbrqnh48nEsNEQ9xFbbhFxibkA-yNBTYP_-40Pi8uL87tQ4OuSuXFkZ1jiDUmqk3cCgvhLjXuP7QFpznDRO_lzRJUzRIidRBgR-HvXt2LwG4cd-AfjirXQKQOodACd2hmQ1aRL5ixkjQXKeGOYWbHH6UwKNPrj6SVR-PzTafqGjnDoInXljB3z6xJsi4--07VV8mOiYlObbrTsdDqy8YI0D_6f5MlWaCL17y2J1YmOD5Gauy7CDIzAx7hYaFMwIc8nKaSjFJ6qAYsu4HIsNazXpI8_qpxoY8sYKfTzBVg9lJ-FDdy1CvJmMn8sPvRld6M1XA156RqNodrYg7Nr8E08e9umGvom7SXW6ZPeYDW3uhBTwgr3KiiaMHNZT83M2Ix5EJGYAyE6GtdlFmBItyUiidGj8\"\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYmU0MjFiOWIxODNmYjBmMzQ0NTU4OGQwZmRiNWZiMDA3ZTBhZTAyNzg5MzI4ZGJkZWE3Y2IwMDgwMGRjYjEyODdiZjkyNzk2NTI5NDQ2OGMiLCJpYXQiOjE3Mzk5NzIyMjAuNzI2MTg4LCJuYmYiOjE3Mzk5NzIyMjAuNzI2MTksImV4cCI6MTc3MTUwODIyMC43MjM2NSwic3ViIjoiMSIsInNjb3BlcyI6W119.Qq5uv4vd5dIuMlUpXHH3-ybY1cq4EgR8q74GzCpDZLsfLKj7oOwOMGqYqUCcJ9Y_I5O8XLbbivnjw6QtlA0pqBfxQGWBvKOyma1N8u9o3Nud9fpPjsj447AEDNiZ1BxJKokOREDHzPFm_wgW0iug6Ioe9f3kB3JnaivUfWjSI-FAl_Y-ZhaSoGCayjnAfEJdKPb_Fh6_lY4Pa7A8cK6IEpYdQKIkYHzESdpD4oh1WgnZ4ojyxijo7autXh726-E5gGUNEdQjNPv59WENCkGobQuJqvwDtS-b83cqXjqWbDckCuolejIll2fE7a1p0s5HSOPrhE1qFrph3dWzBNWJc6LDsqYod7LFKwMDZKhztEdqJ2qNkOHN9bu4MpXJOh46KENb6rYgBlOGlUsxTKsFC8kRef4SFEB3wyoqSXLH9IZAV4OoJ62A3CcpyMSQ5B4pqHu9YQ3rPySFKlQM0oMpMq3LB9xL5Di6Fh5rDmCrRkV9wz6p8syHg11FWEw09wpwzGblYdeSktR69ep7hzBI6Yu2J6eCfV8NgRTnWFaNR088ieJ2cGpwtU7LvyeQpwace8L8dnJYOPAy-P48xCXy1koQictsP4LNoks-ebwc0xVzcmAtljmRSLBOITUW2KK5IQpKKvLppOXykaLidQHuw6dWJXrtOfHZmv2A_eP5EN0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "massa@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/logout",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Feb 2025 23:39:14 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Logout successful\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Attributes",
+			"item": [
+				{
+					"name": "get attributes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTc2NmJlOGQ4Yjc0YWVhZjBmM2UxZDhkOGY0YTZjYzA1MTFmZTQxMjI2MmNhZWEzNjkwZGIzZTZmYTE0NjNhODAzNDY5ZDAwYjljMTUzMWQiLCJpYXQiOjE3Mzk5MjAwMDEuMzUxMDAxLCJuYmYiOjE3Mzk5MjAwMDEuMzUxMDAzLCJleHAiOjE3NzE0NTYwMDEuMzQ4NTYsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.D6tL9I3A9dcFkWCME5g9RnhSQSt0Awb2ITSzmMbFzc_H15T_L_0_PVJRwgFNYBbrjQ7Jwe-TKmLQduY39BoKzmrtPBtYI2njdh-TEihkk2ArKW5JvOGR2mXyydi7I4zpo-nUFGHQ5cI491AbW0-e0EyNbRzw1dhMNNfcHz4YAJjKySH8L94pa7oV9k4FC1IjNlGIOAQrKpqFMrP3KuBgnzDN_rc0dFmrBsVSuAG18lTB3lJhQEVOisGB-R3kUYMClkHph9ofF5FcypvoJbrqnh48nEsNEQ9xFbbhFxibkA-yNBTYP_-40Pi8uL87tQ4OuSuXFkZ1jiDUmqk3cCgvhLjXuP7QFpznDRO_lzRJUzRIidRBgR-HvXt2LwG4cd-AfjirXQKQOodACd2hmQ1aRL5ixkjQXKeGOYWbHH6UwKNPrj6SVR-PzTafqGjnDoInXljB3z6xJsi4--07VV8mOiYlObbrTsdDqy8YI0D_6f5MlWaCL17y2J1YmOD5Gauy7CDIzAx7hYaFMwIc8nKaSjFJ6qAYsu4HIsNazXpI8_qpxoY8sYKfTzBVg9lJ-FDdy1CvJmMn8sPvRld6M1XA156RqNodrYg7Nr8E08e9umGvom7SXW6ZPeYDW3uhBTwgr3KiiaMHNZT83M2Ix5EJGYAyE6GtdlFmBItyUiidGj8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 11|g1cJ7NTnuiV10e1m8KmXLYqNvcFJZU291afKgZHI5ce71fe1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "description",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "text",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/attributes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"attributes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get attributes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 11|g1cJ7NTnuiV10e1m8KmXLYqNvcFJZU291afKgZHI5ce71fe1",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "description",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "text",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attributes",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attributes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Feb 2025 23:04:12 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"department\",\n        \"type\": \"text\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"start_date\",\n        \"type\": \"date\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"end_date\",\n        \"type\": \"date\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"description\",\n        \"type\": \"text\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "store attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTc2NmJlOGQ4Yjc0YWVhZjBmM2UxZDhkOGY0YTZjYzA1MTFmZTQxMjI2MmNhZWEzNjkwZGIzZTZmYTE0NjNhODAzNDY5ZDAwYjljMTUzMWQiLCJpYXQiOjE3Mzk5MjAwMDEuMzUxMDAxLCJuYmYiOjE3Mzk5MjAwMDEuMzUxMDAzLCJleHAiOjE3NzE0NTYwMDEuMzQ4NTYsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.D6tL9I3A9dcFkWCME5g9RnhSQSt0Awb2ITSzmMbFzc_H15T_L_0_PVJRwgFNYBbrjQ7Jwe-TKmLQduY39BoKzmrtPBtYI2njdh-TEihkk2ArKW5JvOGR2mXyydi7I4zpo-nUFGHQ5cI491AbW0-e0EyNbRzw1dhMNNfcHz4YAJjKySH8L94pa7oV9k4FC1IjNlGIOAQrKpqFMrP3KuBgnzDN_rc0dFmrBsVSuAG18lTB3lJhQEVOisGB-R3kUYMClkHph9ofF5FcypvoJbrqnh48nEsNEQ9xFbbhFxibkA-yNBTYP_-40Pi8uL87tQ4OuSuXFkZ1jiDUmqk3cCgvhLjXuP7QFpznDRO_lzRJUzRIidRBgR-HvXt2LwG4cd-AfjirXQKQOodACd2hmQ1aRL5ixkjQXKeGOYWbHH6UwKNPrj6SVR-PzTafqGjnDoInXljB3z6xJsi4--07VV8mOiYlObbrTsdDqy8YI0D_6f5MlWaCL17y2J1YmOD5Gauy7CDIzAx7hYaFMwIc8nKaSjFJ6qAYsu4HIsNazXpI8_qpxoY8sYKfTzBVg9lJ-FDdy1CvJmMn8sPvRld6M1XA156RqNodrYg7Nr8E08e9umGvom7SXW6ZPeYDW3uhBTwgr3KiiaMHNZT83M2Ix5EJGYAyE6GtdlFmBItyUiidGj8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "description",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "text",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/attributes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"attributes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "store attribute",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "image",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "text",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attributes",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attributes"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Feb 2025 23:05:07 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Attribute created successfully\",\n    \"attribute\": {\n        \"name\": \"image\",\n        \"type\": \"text\",\n        \"id\": 5\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update attribute",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Full Desc\",\n    \"type\" : \"text\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/attributes/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"attributes",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update attribute",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\" : \"Full Desc\",\n    \"type\" : \"text\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attributes/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attributes",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Feb 2025 02:02:46 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Attribute updated successfully\",\n    \"attribute\": {\n        \"id\": 4,\n        \"name\": \"Full Desc\",\n        \"type\": \"text\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "get projects",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 11|g1cJ7NTnuiV10e1m8KmXLYqNvcFJZU291afKgZHI5ce71fe1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "description",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "text",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get projects",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 11|g1cJ7NTnuiV10e1m8KmXLYqNvcFJZU291afKgZHI5ce71fe1",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "description",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "text",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Feb 2025 23:09:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Project 1\",\n        \"status\": \"active\",\n        \"attributes\": []\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Project 2\",\n        \"status\": \"completed\",\n        \"attributes\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "store project with attributes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"New Project 10\",\n    \"status\": \"active\",\n    \"attributes\": [\n        {\n            \"id\": 1,\n            \"value\": \"HR Department\"\n        }\n    ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "store project with attributes",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"New Project 1\",\n    \"status\": \"active\",\n    \"attributes\": [\n        {\n            \"id\": 1,\n            \"value\": \"HR Department\"\n        }\n    ]\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Feb 2025 23:29:15 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Project created successfully\",\n    \"project\": {\n        \"name\": \"New Project 1\",\n        \"status\": \"active\",\n        \"id\": 19\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update project",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Taxi Project New\",\n    \"status\": \"active\",\n    \"attributes\": [\n        {\n            \"id\": 1,\n            \"value\": \"Sales Department\"\n        }\n    ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/19",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"19"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update project",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Taxi Project New\",\n    \"status\": \"active\",\n    \"attributes\": [\n        {\n            \"id\": 1,\n            \"value\": \"Sales Department\"\n        }\n    ]\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects/19",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects",
+										"19"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Feb 2025 23:32:54 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Project updated successfully\",\n    \"project\": {\n        \"id\": 19,\n        \"name\": \"Taxi Project New\",\n        \"status\": \"active\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Filter projects by dynamic attribute values",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 11|g1cJ7NTnuiV10e1m8KmXLYqNvcFJZU291afKgZHI5ce71fe1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "description",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "text",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects/filter?filters[department]=IT department",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "filters[department]",
+									"value": "IT department"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Filter projects by dynamic attribute values",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 11|g1cJ7NTnuiV10e1m8KmXLYqNvcFJZU291afKgZHI5ce71fe1",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "description",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "text",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects/filter?filters[department]=IT department",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects",
+										"filter"
+									],
+									"query": [
+										{
+											"key": "filters[department]",
+											"value": "IT department"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 18 Feb 2025 23:36:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Projects found\",\n    \"projects\": [\n        {\n            \"id\": 18,\n            \"name\": \"New Project\",\n            \"status\": \"active\",\n            \"attributes\": [\n                {\n                    \"id\": 4,\n                    \"attribute_id\": 1,\n                    \"entity_id\": 18,\n                    \"value\": \"IT Department\",\n                    \"attribute\": {\n                        \"id\": 1,\n                        \"name\": \"department\",\n                        \"type\": \"text\"\n                    }\n                },\n                {\n                    \"id\": 5,\n                    \"attribute_id\": 2,\n                    \"entity_id\": 18,\n                    \"value\": \"2025-06-01\",\n                    \"attribute\": {\n                        \"id\": 2,\n                        \"name\": \"start_date\",\n                        \"type\": \"date\"\n                    }\n                },\n                {\n                    \"id\": 6,\n                    \"attribute_id\": 3,\n                    \"entity_id\": 18,\n                    \"value\": \"10\",\n                    \"attribute\": {\n                        \"id\": 3,\n                        \"name\": \"end_date\",\n                        \"type\": \"date\"\n                    }\n                }\n            ]\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "advanced filter projects",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer 11|g1cJ7NTnuiV10e1m8KmXLYqNvcFJZU291afKgZHI5ce71fe1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "description",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "text",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/projects?filters[department]=IT Department&filters[name]=Dima",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"projects"
+							],
+							"query": [
+								{
+									"key": "filters[department]",
+									"value": "IT Department"
+								},
+								{
+									"key": "filters[name]",
+									"value": "Dima"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "advanced filter projects",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer 11|g1cJ7NTnuiV10e1m8KmXLYqNvcFJZU291afKgZHI5ce71fe1",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "description",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "text",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects?filters[department]=IT Department&filters[name]=Dima",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects"
+									],
+									"query": [
+										{
+											"key": "filters[department]",
+											"value": "IT Department"
+										},
+										{
+											"key": "filters[name]",
+											"value": "Dima"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.31"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 19 Feb 2025 03:29:51 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "54"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 18,\n        \"name\": \"Dima\",\n        \"status\": \"active\",\n        \"attributes\": [\n            {\n                \"id\": 4,\n                \"attribute_id\": 1,\n                \"entity_id\": 18,\n                \"value\": \"IT Department\",\n                \"attribute\": {\n                    \"id\": 1,\n                    \"name\": \"department\",\n                    \"type\": \"text\"\n                }\n            },\n            {\n                \"id\": 5,\n                \"attribute_id\": 2,\n                \"entity_id\": 18,\n                \"value\": \"2025-06-01\",\n                \"attribute\": {\n                    \"id\": 2,\n                    \"name\": \"start_date\",\n                    \"type\": \"date\"\n                }\n            }\n        ]\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "CRUD",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "users",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "users",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/users",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"users"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 00:21:30 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"first_name\": \"massa\",\n        \"last_name\": \"bazrtwo\",\n        \"email\": \"massa@gmail.com\"\n    },\n    {\n        \"id\": 2,\n        \"first_name\": \"Dima\",\n        \"last_name\": \"Sharaf\",\n        \"email\": \"dema.sharaf1@gmail.com\"\n    },\n    {\n        \"id\": 3,\n        \"first_name\": \"massa 1\",\n        \"last_name\": \"bazrtwo 1\",\n        \"email\": \"massa1@gmail.com\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "specific user",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"3"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "specific user",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/users/3",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"users",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 00:22:05 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 3,\n    \"first_name\": \"massa 1\",\n    \"last_name\": \"bazrtwo 1\",\n    \"email\": \"massa1@gmail.com\"\n}"
+								}
+							]
+						},
+						{
+							"name": "create user",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "abdual",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "bazrtwo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "abd1@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create user",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "first_name",
+													"value": "abdual",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "bazrtwo",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "abd@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/users",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"users"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 00:24:45 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"User created successfully\",\n    \"user\": {\n        \"first_name\": \"abdual\",\n        \"last_name\": \"bazrtwo\",\n        \"email\": \"abd@gmail.com\",\n        \"id\": 4\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "update user",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"first_name\" : \"Hanan\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/6",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"6"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update user",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "first_name",
+													"value": "abdual",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "bazrtwo",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "abd@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/users/4?first_name=abd alrhman",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"users",
+												"4"
+											],
+											"query": [
+												{
+													"key": "first_name",
+													"value": "abd alrhman"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 00:26:22 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"User updated successfully\",\n    \"user\": {\n        \"id\": 4,\n        \"first_name\": \"abd alrhman\",\n        \"last_name\": \"bazrtwo\",\n        \"email\": \"abd@gmail.com\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "delete user",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "abdual",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "bazrtwo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "abd@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"4"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete user",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "first_name",
+													"value": "abdual",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "bazrtwo",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "abd@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/users/4",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"users",
+												"4"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 00:27:04 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"User deleted successfully\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Projects",
+					"item": [
+						{
+							"name": "projects",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "projects",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/projects",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"projects"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 00:55:14 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Project 1\",\n        \"status\": \"active\",\n        \"attributes\": []\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Project 2\",\n        \"status\": \"completed\",\n        \"attributes\": []\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Dima Project\",\n        \"status\": \"active\",\n        \"attributes\": []\n    },\n    {\n        \"id\": 18,\n        \"name\": \"New Project\",\n        \"status\": \"active\",\n        \"attributes\": [\n            {\n                \"id\": 4,\n                \"attribute_id\": 1,\n                \"entity_id\": 18,\n                \"value\": \"IT Department\",\n                \"attribute\": {\n                    \"id\": 1,\n                    \"name\": \"department\",\n                    \"type\": \"text\"\n                }\n            },\n            {\n                \"id\": 5,\n                \"attribute_id\": 2,\n                \"entity_id\": 18,\n                \"value\": \"2025-06-01\",\n                \"attribute\": {\n                    \"id\": 2,\n                    \"name\": \"start_date\",\n                    \"type\": \"date\"\n                }\n            },\n            {\n                \"id\": 6,\n                \"attribute_id\": 3,\n                \"entity_id\": 18,\n                \"value\": \"10\",\n                \"attribute\": {\n                    \"id\": 3,\n                    \"name\": \"end_date\",\n                    \"type\": \"date\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Taxi Project New\",\n        \"status\": \"active\",\n        \"attributes\": [\n            {\n                \"id\": 7,\n                \"attribute_id\": 1,\n                \"entity_id\": 19,\n                \"value\": \"Sales Department\",\n                \"attribute\": {\n                    \"id\": 1,\n                    \"name\": \"department\",\n                    \"type\": \"text\"\n                }\n            }\n        ]\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "specific project",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects/23",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects",
+										"23"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "specific project",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/projects/23",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"projects",
+												"23"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 01:17:37 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 23,\n    \"name\": \"outside1 project\",\n    \"status\": \"active\",\n    \"attributes\": [\n        {\n            \"id\": 11,\n            \"attribute_id\": 1,\n            \"entity_id\": 23,\n            \"value\": \"outside Department\",\n            \"attribute\": {\n                \"id\": 1,\n                \"name\": \"department\",\n                \"type\": \"text\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "create project",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"four Project\",\n    \"status\": \"active\",\n    \"attributes\": [\n        {\n            \"id\": 1,\n            \"value\": \"outside Department\"\n        }\n    ]\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create project",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Sec Project\",\n    \"status\": \"active\",\n    \"attributes\": [\n        {\n            \"id\": 1,\n            \"value\": \"Sales Department\"\n        }\n    ]\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/projects",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"projects"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 00:57:25 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Project created successfully\",\n    \"project\": {\n        \"name\": \"Sec Project\",\n        \"status\": \"active\",\n        \"id\": 20\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "update project",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\" : \"project ID 20\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects/20",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects",
+										"20"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update project",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\" : \"project ID 20\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/projects/20",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"projects",
+												"20"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 01:59:44 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Project updated successfully\",\n    \"project\": {\n        \"id\": 20,\n        \"name\": \"project ID 20\",\n        \"status\": \"active\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "delete project",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "abdual",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "bazrtwo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "abd@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/projects/23",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"projects",
+										"23"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete project",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "first_name",
+													"value": "abdual",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "bazrtwo",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "abd@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/projects/3",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"projects",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 00:54:30 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Project deleted successfully\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Timesheets",
+					"item": [
+						{
+							"name": "Timesheets",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/timesheets",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"timesheets"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "timesheets",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/timesheets",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"timesheets"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 01:45:02 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"task_name\": \"Design Database\",\n        \"date\": \"2025-02-18\",\n        \"hours\": 6,\n        \"user_id\": 1,\n        \"project_id\": 1,\n        \"user\": {\n            \"id\": 1,\n            \"first_name\": \"massa\",\n            \"last_name\": \"bazrtwo\",\n            \"email\": \"massa@gmail.com\"\n        },\n        \"project\": {\n            \"id\": 1,\n            \"name\": \"Project 1\",\n            \"status\": \"active\"\n        }\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "specific timesheet",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/timesheets/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"timesheets",
+										"1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "specific timesheet",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/timesheets/1",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"timesheets",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 01:46:00 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "56"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"task_name\": \"Design Database\",\n    \"date\": \"2025-02-18\",\n    \"hours\": 6,\n    \"user_id\": 1,\n    \"project_id\": 1,\n    \"user\": {\n        \"id\": 1,\n        \"first_name\": \"massa\",\n        \"last_name\": \"bazrtwo\",\n        \"email\": \"massa@gmail.com\"\n    },\n    \"project\": {\n        \"id\": 1,\n        \"name\": \"Project 1\",\n        \"status\": \"active\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "create timesheet",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "task_name",
+											"value": "core of the project",
+											"type": "text"
+										},
+										{
+											"key": "date",
+											"value": "2025-03-01",
+											"type": "text"
+										},
+										{
+											"key": "hours",
+											"value": "16",
+											"type": "text"
+										},
+										{
+											"key": "user_id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "project_id",
+											"value": "22",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/timesheets",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"timesheets"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create timesheet",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "task_name",
+													"value": "core of the project",
+													"type": "text"
+												},
+												{
+													"key": "date",
+													"value": "2025-03-01",
+													"type": "text"
+												},
+												{
+													"key": "hours",
+													"value": "16",
+													"type": "text"
+												},
+												{
+													"key": "user_id",
+													"value": "5",
+													"type": "text"
+												},
+												{
+													"key": "project_id",
+													"value": "22",
+													"type": "text"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/timesheets",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"timesheets"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 01:52:27 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Timesheet created successfully\",\n    \"timesheet\": {\n        \"task_name\": \"core of the project\",\n        \"date\": \"2025-03-01\",\n        \"hours\": \"16\",\n        \"user_id\": \"5\",\n        \"project_id\": \"22\",\n        \"id\": 3,\n        \"user\": {\n            \"id\": 5,\n            \"first_name\": \"abdual\",\n            \"last_name\": \"bazrtwo\",\n            \"email\": \"abd@gmail.com\"\n        },\n        \"project\": {\n            \"id\": 22,\n            \"name\": \"New Project 10\",\n            \"status\": \"active\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "update timesheet",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"task_name\": \"Updated Design DB\",\n    \"date\": \"2025-06-20\",\n    \"hours\": 6\n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/timesheets/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"timesheets",
+										"1"
+									],
+									"query": [
+										{
+											"key": "date",
+											"value": "2023-03-02",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update timesheet",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"task_name\": \"Updated Design DB\",\n    \"date\": \"2025-06-20\",\n    \"hours\": 6\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/timesheets/1",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"timesheets",
+												"1"
+											],
+											"query": [
+												{
+													"key": "date",
+													"value": "2023-03-02",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 01:57:22 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Timesheet updated successfully\",\n    \"timesheet\": {\n        \"id\": 1,\n        \"task_name\": \"Updated Design DB\",\n        \"date\": \"2025-06-20\",\n        \"hours\": 6,\n        \"user_id\": 1,\n        \"project_id\": 1,\n        \"user\": {\n            \"id\": 1,\n            \"first_name\": \"massa\",\n            \"last_name\": \"bazrtwo\",\n            \"email\": \"massa@gmail.com\"\n        },\n        \"project\": {\n            \"id\": 1,\n            \"name\": \"Project 1\",\n            \"status\": \"active\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "delete timesheet",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "abdual",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "bazrtwo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "abd@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/timesheets/3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"timesheets",
+										"3"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete timesheet",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "first_name",
+													"value": "abdual",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "bazrtwo",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "abd@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/timesheets/3",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"timesheets",
+												"3"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 01:58:24 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Timesheet deleted successfully\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "AttributeValues",
+					"item": [
+						{
+							"name": "AttributeValues",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attribute-values",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attribute-values"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "AttributeValues",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attribute-values",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attribute-values"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 03:02:08 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 4,\n        \"attribute_id\": 1,\n        \"entity_id\": 18,\n        \"value\": \"IT Department\",\n        \"attribute\": {\n            \"id\": 1,\n            \"name\": \"department\",\n            \"type\": \"text\"\n        },\n        \"project\": {\n            \"id\": 18,\n            \"name\": \"New Project\",\n            \"status\": \"active\"\n        }\n    },\n    {\n        \"id\": 5,\n        \"attribute_id\": 2,\n        \"entity_id\": 18,\n        \"value\": \"2025-06-01\",\n        \"attribute\": {\n            \"id\": 2,\n            \"name\": \"start_date\",\n            \"type\": \"date\"\n        },\n        \"project\": {\n            \"id\": 18,\n            \"name\": \"New Project\",\n            \"status\": \"active\"\n        }\n    },\n    {\n        \"id\": 6,\n        \"attribute_id\": 3,\n        \"entity_id\": 18,\n        \"value\": \"10\",\n        \"attribute\": {\n            \"id\": 3,\n            \"name\": \"end_date\",\n            \"type\": \"date\"\n        },\n        \"project\": {\n            \"id\": 18,\n            \"name\": \"New Project\",\n            \"status\": \"active\"\n        }\n    },\n    {\n        \"id\": 7,\n        \"attribute_id\": 1,\n        \"entity_id\": 19,\n        \"value\": \"Sales Department\",\n        \"attribute\": {\n            \"id\": 1,\n            \"name\": \"department\",\n            \"type\": \"text\"\n        },\n        \"project\": {\n            \"id\": 19,\n            \"name\": \"Taxi Project New\",\n            \"status\": \"active\"\n        }\n    },\n    {\n        \"id\": 8,\n        \"attribute_id\": 1,\n        \"entity_id\": 20,\n        \"value\": \"Sales Department\",\n        \"attribute\": {\n            \"id\": 1,\n            \"name\": \"department\",\n            \"type\": \"text\"\n        },\n        \"project\": {\n            \"id\": 20,\n            \"name\": \"project ID 20\",\n            \"status\": \"active\"\n        }\n    },\n    {\n        \"id\": 9,\n        \"attribute_id\": 1,\n        \"entity_id\": 21,\n        \"value\": \"Sales Department\",\n        \"attribute\": {\n            \"id\": 1,\n            \"name\": \"department\",\n            \"type\": \"text\"\n        },\n        \"project\": {\n            \"id\": 21,\n            \"name\": \"Sec Project\",\n            \"status\": \"active\"\n        }\n    },\n    {\n        \"id\": 10,\n        \"attribute_id\": 1,\n        \"entity_id\": 22,\n        \"value\": \"HR Department\",\n        \"attribute\": {\n            \"id\": 1,\n            \"name\": \"department\",\n            \"type\": \"text\"\n        },\n        \"project\": {\n            \"id\": 22,\n            \"name\": \"New Project 10\",\n            \"status\": \"active\"\n        }\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "specific AttributeValues",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attribute-values/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attribute-values",
+										"4"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "specific AttributeValues",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attribute-values/4",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attribute-values",
+												"4"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 03:03:24 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 4,\n    \"attribute_id\": 1,\n    \"entity_id\": 18,\n    \"value\": \"IT Department\",\n    \"attribute\": {\n        \"id\": 1,\n        \"name\": \"department\",\n        \"type\": \"text\"\n    },\n    \"project\": {\n        \"id\": 18,\n        \"name\": \"New Project\",\n        \"status\": \"active\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "create AttributeValues",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "value",
+											"value": "core of the project",
+											"type": "text"
+										},
+										{
+											"key": "attribute_id",
+											"value": "5",
+											"type": "text"
+										},
+										{
+											"key": "entity_id",
+											"value": "22",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attribute-values",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attribute-values"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create AttributeValues",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "value",
+													"value": "core of the project",
+													"type": "text"
+												},
+												{
+													"key": "attribute_id",
+													"value": "5",
+													"type": "text"
+												},
+												{
+													"key": "entity_id",
+													"value": "22",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attribute-values",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attribute-values"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 03:04:32 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"AttributeValue created successfully\",\n    \"attributeValue\": {\n        \"entity_id\": \"22\",\n        \"attribute_id\": \"5\",\n        \"value\": \"core of the project\",\n        \"id\": 12,\n        \"attribute\": {\n            \"id\": 5,\n            \"name\": \"image\",\n            \"type\": \"text\"\n        },\n        \"project\": {\n            \"id\": 22,\n            \"name\": \"New Project 10\",\n            \"status\": \"active\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "update AttributeValues",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"value\": \"Updated Name\"\n \n}\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attribute-values/6",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attribute-values",
+										"6"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update AttributeValues",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"value\": \"Updated Name\"\n \n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attribute-values/6",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attribute-values",
+												"6"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 03:06:29 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "56"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"AttributeValue updated successfully\",\n    \"timesheet\": {\n        \"id\": 6,\n        \"attribute_id\": 3,\n        \"entity_id\": 18,\n        \"value\": \"Updated Name\",\n        \"attribute\": {\n            \"id\": 3,\n            \"name\": \"end_date\",\n            \"type\": \"date\"\n        },\n        \"project\": {\n            \"id\": 18,\n            \"name\": \"New Project\",\n            \"status\": \"active\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "delete AttributeValues",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "abdual",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "bazrtwo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "abd@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attribute-values/6",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attribute-values",
+										"6"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete AttributeValues",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "first_name",
+													"value": "abdual",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "bazrtwo",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "abd@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attribute-values/6",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attribute-values",
+												"6"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 03:07:13 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"AttributeValue deleted successfully\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Attributes",
+					"item": [
+						{
+							"name": "attributes",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attributes",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attributes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "attributes",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attributes",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attributes"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 02:09:56 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"department\",\n        \"type\": \"text\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"start_date\",\n        \"type\": \"date\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"end_date\",\n        \"type\": \"date\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Full Desc\",\n        \"type\": \"text\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"image\",\n        \"type\": \"text\"\n    }\n]"
+								}
+							]
+						},
+						{
+							"name": "specific attribute",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attributes/5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attributes",
+										"5"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "specific attribute",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attributes/5",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attributes",
+												"5"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 02:10:41 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 5,\n    \"name\": \"image\",\n    \"type\": \"text\"\n}"
+								}
+							]
+						},
+						{
+							"name": "create attribute",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"name\": \"Project Type\",\n\"type\": \"select\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attributes",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attributes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create attribute",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"Image 2\",\n    \"type\": \"text\"\n}\n",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attributes",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attributes"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 02:12:06 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Attribute created successfully\",\n    \"attribute\": {\n        \"name\": \"Image 2\",\n        \"type\": \"text\",\n        \"id\": 6\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "update attribute",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\" : \"project ID 20\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attributes/6",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attributes",
+										"6"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update attribute",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\" : \"project ID 20\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attributes/6",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attributes",
+												"6"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 02:41:17 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Attribute updated successfully\",\n    \"attribute\": {\n        \"id\": 6,\n        \"name\": \"project ID 20\",\n        \"type\": \"text\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "delete attribute",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTcyMTE3MmUwODE4ZTAyMDIxM2RlM2EzMWIzMzIxNzMyZmFiOTFiZDlmYzM4N2VjYjFlNDRlOGIwZjk1NTVjODNlZTRjODNiY2QzMWJhMjkiLCJpYXQiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJuYmYiOjE3Mzk5MjQ0NjIuNTA1NTc1LCJleHAiOjE3NzE0NjA0NjIuNTAyMDMxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.jz48wuN5jYODgGFhW_7zzuYUK_eS7wbVJSfYKKkQBmyilGxjOUPtvO8wtb4o67rqkAzKTduyWQ5gf9idYQrft7BtNqYIFO7Mso1wUXGmskmZMi6Vjx0_ORaT3jmImuxVU3HfTfI1jJ1twFl2mDTD2VpjD16E1GfrLmrJzn-Db18sjKvijNgkyvhyhfeqDzyUgazJQa0jm-tUf3QK-O48Z4NCCuYQ9PekZT6t0Qn-9tOq68LIbG3uoWEJoDHN4uKA7MtTlFzPPNO2eclDHlyXzYlb4ZNhkzPDlCD7DPyARHGL1hTr2i4azgGrnkmhYOtGyDNoqG2FPFZgAvJHyVyzFetPP1aidxnQWrgGaoCHsSeePOERmxkfYxLgRYhF170pyDQwFs2R-iEIy8kUROrPhaqYgL3a6-PVQO9gtHPqPyyK31Di7PGCfN3Yd0xN8Qshwvq9PG50Ktwxq7VVIgrBhWECNhL4pkO_Es09p0SakEhjA0uXHL0GAoMz8OZba0HxshqOcrr3fWUnASn2DE0d84DmKcoti0ItcGHs6GTSe6PJaIoUdN34bsHozVeJGVgWn6bxyfZEdHmikKO5B2c49j7zEnP4V-FcsB1wdkKnjdJGjEwGcEZ1ueOYsScez0mkHxmR3v7vCOICXz-GsKvx9I5fUdgA9WjkwwUdUK-6hCg",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "abdual",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "bazrtwo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "abd@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/attributes/6",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"attributes",
+										"6"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete attribute",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "first_name",
+													"value": "abdual",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "bazrtwo",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "abd@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://127.0.0.1:8000/api/attributes/6",
+											"protocol": "http",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"attributes",
+												"6"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.31"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 19 Feb 2025 02:32:12 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Attribute deleted successfully\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
