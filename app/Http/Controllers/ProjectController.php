@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\AttributeValue;
 use App\Models\Project;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
@@ -13,7 +14,8 @@ class ProjectController extends Controller
 {
     //
 
-    public function index(){
+    public function index(): JsonResponse
+    {
         try {
             $projects = Project::with('attributes.attribute')->get();
             return response()->json($projects, 200);
@@ -23,7 +25,7 @@ class ProjectController extends Controller
         }
     }
 
-    public function store(Request $request)
+    public function store(Request $request): JsonResponse
     {
         try {
             // Validate input
@@ -67,11 +69,9 @@ class ProjectController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    public function update(Request $request, Project $project): JsonResponse
     {
         try {
-            // Find project or return 404
-            $project = Project::findOrFail($id);
 
             // Validate input
             $validator = Validator::make($request->all(), [
@@ -103,12 +103,8 @@ class ProjectController extends Controller
                 'project' => $project
             ], 200);
 
-        } catch (ModelNotFoundException $e) {
-            return response()->json([
-                'error' => 'Project not found',
-                'details' => $e->getMessage()
-            ], 404);
-        } catch (\Exception $e) {
+        }
+        catch (\Exception $e) {
             return response()->json([
                 'error' => 'Internal Server Error',
                 'details' => $e->getMessage()
@@ -123,7 +119,7 @@ class ProjectController extends Controller
      * GET /api/projects/filter?filters[department]=IT&filters[start_date]=2025-06-01
      */
 
-    public function filterByAttributes(Request $request)
+    public function filterByAttributes(Request $request): JsonResponse
     {
         try {
             // Validate that filters parameter is provided
@@ -159,6 +155,22 @@ class ProjectController extends Controller
                 'details' => $e->getMessage()
             ], 500);
         }
+    }
+
+    public function show(Project $project): JsonResponse
+    {
+        $project->load('attributes.attribute');
+
+        return response()->json($project, 200);
+    }
+
+
+    public function destroy(Project $project): JsonResponse
+    {
+        $project->attributes()->delete();
+        $project->delete();
+
+        return response()->json(['message' => 'Project deleted successfully'], 200);
     }
 
 
