@@ -17,16 +17,15 @@ This project provides a RESTful API built with Laravel, supporting:
 <h3>1. Clone the Repository</h3>
 git clone https://github.com/dema1sharaf/astudio.git
 <br/>
-cd astudio
 <h3>2. Install Dependencies</h3>
-```bash
+<pre><code>
 composer install
 npm install
-```
+</code></pre>
 <h3>3. Environment Configuration</h3>
-```bash
+<pre><code>
 cp .env.example .env 
-```
+</code></pre>
 
 <h3>4. Generate Application Key</h3>
 <pre><code>php artisan key:generate</code></pre>
