@@ -391,7 +391,6 @@ Copy the client ID and secret into your .env file from the output.
         }
     ]
 }
-
 </code></pre>
 <h3>Example Response:</h3>
 <pre><code>
