@@ -14,11 +14,23 @@ class ProjectController extends Controller
 {
     //
 
-    public function index(): JsonResponse
+    public function index(Request $request): JsonResponse
     {
         try {
-            $projects = Project::with('attributes.attribute')->get();
-            return response()->json($projects, 200);
+//            $projects = Project::with('attributes.attribute')->get();
+//            return response()->json($projects, 200);
+
+            $query = Project::query()->with('attributes.attribute');
+
+            // Apply filters from request
+            //exp: http://127.0.0.1:8000/api/projects?filters[name]=LIKE:%Dima%
+            if ($request->has('filters')) {
+                foreach ($request->filters as $key => $value) {
+                    $this->applyFilter($query, $key, $value);
+                }
+            }
+
+            return response()->json($query->get(), 200);
 
         }catch (\Exception $e) {
                 return response()->json(['error' => 'Internal Server Error', 'details' => $e->getMessage()], 500);
@@ -171,6 +183,32 @@ class ProjectController extends Controller
         $project->delete();
 
         return response()->json(['message' => 'Project deleted successfully'], 200);
+    }
+
+    private function applyFilter($query, $key, $value)
+    {
+        $operator = '=';
+        $searchValue = $value;
+
+        // Check if value contains an operator
+        if (preg_match('/^(>=|<=|>|<|LIKE):(.+)$/', $value, $matches)) {
+            $operator = $matches[1]; // Extract operator
+            $searchValue = $matches[2]; // Extract actual value
+        }
+
+        // Check if filtering is on a standard column
+        if (in_array($key, ['name', 'status'])) {
+            $query->where($key, $operator, $searchValue);
+        }
+
+        // Check if filtering is on a dynamic EAV attribute
+        else {
+            $query->whereHas('attributes', function ($subQuery) use ($key, $operator, $searchValue) {
+                $subQuery->whereHas('attribute', function ($attrQuery) use ($key) {
+                    $attrQuery->where('name', $key);
+                })->where('value', $operator, $searchValue);
+            });
+        }
     }
 
 
