@@ -11,11 +11,11 @@ class Timesheet extends Model
 
     protected $fillable = ['task_name','date','hours','user_id','project_id'];
 
-    function user(){
+    public function user(){
         return $this->belongsTo(User::class);
     }
 
-    function project(){
+    public function project(){
         return $this->belongsTo(Project::class);
     }
 }

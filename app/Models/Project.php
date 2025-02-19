@@ -12,11 +12,11 @@ class Project extends Model
     protected $fillable = ['name','status'];
 
     protected $hidden = ['created_at','updated_at','deleted_at'];
-    function users(){
+    public function users(){
         return $this->belongsToMany(User::class);
     }
 
-    function timesheets(){
+    public function timesheets(){
         return $this->hasMany(Timesheet::class);
     }
 
